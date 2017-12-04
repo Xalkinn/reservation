@@ -34,7 +34,7 @@ public class Vol{
 	private Integer nombrePlace;
 	
 	@Column
-	private String villeDepard;
+	private String villeDepart;
 	
 	@Column
 	private String villeArrive;
@@ -47,15 +47,15 @@ public class Vol{
 	
 	
 
-	public Vol(String numeroVol, TypeAvion typeAvion, int nombrePlace, String villeDepard, String villeArrive,
-			LocalDate date) {
-		this.numeroVol = numeroVol;
-		this.typeAvion = typeAvion;
-		this.nombrePlace = nombrePlace;
-		this.villeDepard = villeDepard;
-		this.villeArrive = villeArrive;
-		this.date = date;
-	}
+//	public Vol(String numeroVol, TypeAvion typeAvion, int nombrePlace, String villeDepard, String villeArrive,
+//			LocalDate date) {
+//		this.numeroVol = numeroVol;
+//		this.typeAvion = typeAvion;
+//		this.nombrePlace = nombrePlace;
+//		this.villeDepard = villeDepard;
+//		this.villeArrive = villeArrive;
+//		this.date = date;
+//	}
 
 	public String getNumeroVol() {
 		return numeroVol;
@@ -73,12 +73,12 @@ public class Vol{
 		this.nombrePlace = nombrePlace;
 	}
 
-	public String getVilleDepard() {
-		return villeDepard;
+	public String getVilleDepart() {
+		return villeDepart;
 	}
 
-	public void setVilleDepard(String villeDepard) {
-		this.villeDepard = villeDepard;
+	public void setVilleDepart(String villeDepard) {
+		this.villeDepart = villeDepard;
 	}
 	
 	public TypeAvion getTypeAvion() {
