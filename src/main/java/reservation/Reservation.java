@@ -1,14 +1,20 @@
 package reservation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+import vol.Vol;
 
 @Entity
 @Table(name = "reservation")
-public class CreerReservation {
+public class Reservation {
 
 	@Id
 	@GeneratedValue
@@ -22,11 +28,14 @@ public class CreerReservation {
 
 	@Column
 	int age;
-
+	
+	/*@ManyToMany (mappedBy = "listeReservation")
+	private List <Vol> listeVol = new ArrayList<Vol>();
+*/
 	public String getNom() {
 		return nom;
 	}
-
+	
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
@@ -50,5 +59,4 @@ public class CreerReservation {
 	public Long getId() {
 		return id;
 	}
-
 }
